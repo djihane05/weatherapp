@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+  background-image: url('bgd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(189, 181, 181, 0.8); /* Slightly less transparent */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  height: 89vh;
+  margin-bottom: 8px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  width: 70%;
+  box-sizing: border-box;
+  border: 2px solid #0072ff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056cc;
+}
+
+#weather-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items horizontally */
+}
+
+#weather-images {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: center; /* Center-align items horizontally */
+}
+
+#weather-images img {
+  width: 100px;
+  height: auto;
+  margin: 0 10px; /* Space between images and text */
+  display: none; /* Hide by default */
+}
+
+#city-name {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #333;
+  margin: 0 10px; /* Space between image and city name */
+}
+
+#sky-condition {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 10px;
+}
+
+#temperature, #wind-speed, #humidity {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #555;
+}
+
+#sun-image.visible,
+#moon-image.visible,
+#cloudy-image.visible,
+#rain-image.visible {
+  display: block; /* Show when class 'visible' is added */
+}
